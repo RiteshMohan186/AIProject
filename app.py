@@ -33,8 +33,6 @@ def result():
     if request.method == 'POST':
         gender = request.form['gender']
         gender_no = 1 if gender == "Female" else 2
-        # if age<17:
-        #   alert("Age cant be less than 17")
         age = float(request.form['age'])
         openness = float(request.form['openness'])
         neuroticism = float(request.form['neuroticism'])
